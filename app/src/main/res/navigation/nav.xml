@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.examenandroidnavigate.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/go_calculoCuadrado"
+            app:destination="@id/calculoCuadrado" />
+        <action
+            android:id="@+id/go_raiz"
+            app:destination="@id/raiz" />
+        <action
+            android:id="@+id/go_sucesor"
+            app:destination="@id/sucesor" />
+        <action
+            android:id="@+id/go_antecesor"
+            app:destination="@id/antecesor" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculoCuadrado"
+        android:name="com.example.examenandroidnavigate.CalculoCuadrado"
+        android:label="fragment_calculo_cuadrado"
+        tools:layout="@layout/fragment_calculo_cuadrado" />
+    <fragment
+        android:id="@+id/raiz"
+        android:name="com.example.examenandroidnavigate.Raiz"
+        android:label="fragment_raiz"
+        tools:layout="@layout/fragment_raiz" />
+    <fragment
+        android:id="@+id/sucesor"
+        android:name="com.example.examenandroidnavigate.Sucesor"
+        android:label="fragment_sucesor"
+        tools:layout="@layout/fragment_sucesor" />
+    <fragment
+        android:id="@+id/antecesor"
+        android:name="com.example.examenandroidnavigate.Antecesor"
+        android:label="fragment_antecesor"
+        tools:layout="@layout/fragment_antecesor" />
+</navigation>
